@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#D64525" />
+  <meta name="description" content="郑家匠 · 东方手作美食 —— 手作本味，烟火人间。古法工艺，产地严选。" />
+  <title>郑家匠 · 东方手作美食</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <!-- 顶部状态栏（模拟） -->
+    <header class="topbar" id="topbar">
+      <span class="tb-title" id="topbarTitle">郑家匠</span>
+    </header>
+
+    <!-- 视图容器 -->
+    <main class="view" id="view"></main>
+
+    <!-- 底部 TabBar -->
+    <nav class="tabbar" id="tabbar">
+      <div class="tb-item active" data-tab="home">
+        <img src="./assets/icons/home.png" alt="首页" class="tb-ico" />
+        <img src="./assets/icons/home-on.png" alt="" class="tb-ico-on" />
+        <span>首页</span>
+      </div>
+      <div class="tb-item" data-tab="category">
+        <img src="./assets/icons/category.png" alt="分类" class="tb-ico" />
+        <img src="./assets/icons/category-on.png" alt="" class="tb-ico-on" />
+        <span>分类</span>
+      </div>
+      <div class="tb-item" data-tab="cart">
+        <img src="./assets/icons/cart.png" alt="购物袋" class="tb-ico" />
+        <img src="./assets/icons/cart-on.png" alt="" class="tb-ico-on" />
+        <span>购物袋</span>
+        <span class="tb-badge" id="cartBadge" style="display:none">0</span>
+      </div>
+      <div class="tb-item" data-tab="mine">
+        <img src="./assets/icons/user.png" alt="我的" class="tb-ico" />
+        <img src="./assets/icons/user-on.png" alt="" class="tb-ico-on" />
+        <span>我的</span>
+      </div>
+    </nav>
+
+    <!-- 全局 Toast -->
+    <div class="toast" id="toast"></div>
+
+    <!-- 规格选择弹窗 -->
+    <div class="spec-mask" id="specMask"></div>
+    <div class="spec-sheet" id="specSheet"></div>
+
+    <!-- 评价弹窗 -->
+    <div class="spec-mask" id="reviewMask"></div>
+    <div class="review-sheet" id="reviewSheet"></div>
+  </div>
+
+  <script src="./js/config.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/store.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

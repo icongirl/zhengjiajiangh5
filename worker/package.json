@@ -1,0 +1,14 @@
+{
+  "name": "zhengjiajiang-orders-worker",
+  "version": "1.0.0",
+  "description": "郑家匠电商订单后端（Cloudflare Worker）",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "kv:create": "wrangler kv namespace create ZJJ_ORDERS"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
